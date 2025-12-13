@@ -788,6 +788,83 @@
             margin-top: 0;
             /* optional, already spaced by above */
         }
+
+        .page-section {
+    padding: 80px 20px;
+    color: #fff;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-header h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: rgba(255,255,255,0.7);
+}
+
+/* GRID */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+/* CARD */
+.service-card {
+
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+}
+
+/* IMAGE */
+.service-image {
+    height: 180px;
+    overflow: hidden;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* TEXT */
+.service-card h3 {
+    font-size: 20px;
+    margin: 16px;
+}
+
+.service-card p {
+    margin: 0 16px 20px;
+    color: rgba(255,255,255,0.75);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .page-header h2 {
+        font-size: 28px;
+    }
+}
+
     </style>
 </head>
 
@@ -809,7 +886,7 @@
             <header class="home-header">
                 <div class="brand">
                     <div class="logo">
-                        <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Anma Massage Center Logo">
+                        <img src="logo.png" alt="Anma Massage Center Logo">
                     </div>
                     <div>
                         <h1>Anma Massage Center</h1>
@@ -844,89 +921,83 @@
             </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="page-section">
-        <div class="wrap">
-            <div class="page-header">
-                <h2>Our Services</h2>
-                <p>Professional massage therapies tailored for men's wellness needs</p>
-            </div>
-
-            <div class="services-grid">
-                <article class="service-card fade-in">
-                    <div class="service-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3024/3024036.png" alt="Thai massage">
-                    </div>
-                    <h3>Thai Massage</h3>
-                    <p>Dynamic stretching and pressure point therapy to restore mobility and relieve muscle tension. Perfect for athletes and active individuals.</p>
-                    <div style="margin-top: 15px; color: var(--accent); font-weight: 600;"></div>
-                </article>
-
-                <article class="service-card fade-in">
-                    <div class="service-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3095/3095113.png" alt="Aroma massage">
-                    </div>
-                    <h3>Aroma Massage</h3>
-                    <p>Calming essential oils combined with gentle strokes for deep relaxation and skin nourishment. Choose from lavender, eucalyptus, or sandalwood.</p>
-                    <div style="margin-top: 15px; color: var(--accent); font-weight: 600;"></div>
-                </article>
-
-                <article class="service-card fade-in">
-                    <div class="service-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3208/3208720.png" alt="Hot stone">
-                    </div>
-                    <h3>Hot Stone Therapy</h3>
-                    <p>Heated basalt stones deeply relax muscles, improve circulation, and promote faster recovery. Ideal for chronic pain and stress relief.</p>
-                    <div style="margin-top: 15px; color: var(--accent); font-weight: 600;"></div>
-                </article>
-
-                <article class="service-card fade-in">
-                    <div class="service-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2933/2933936.png" alt="Steam bath">
-                    </div>
-                    <h3>Steam Bath</h3>
-                    <p>Detoxifying steam session to open pores, relax muscles, and prepare your body for deep tissue work. Includes aromatherapy options.</p>
-                    <div style="margin-top: 15px; color: var(--accent); font-weight: 600;"></div>
-                </article>
-
-                <article class="service-card fade-in">
-                    <div class="service-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3024/3024042.png" alt="Foot reflexology">
-                    </div>
-                    <h3>Foot Reflexology</h3>
-                    <p>Targeted pressure point work on feet to relieve stress, improve sleep, and balance energy throughout the body.</p>
-                    <div style="margin-top: 15px; color: var(--accent); font-weight: 600;"></div>
-                </article>
-
-                <article class="service-card fade-in">
-                    <div class="service-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3024/3024038.png" alt="Head and shoulder">
-                    </div>
-                    <h3>Head & Shoulder Relief</h3>
-                    <p>Specialized treatment for desk workers targeting neck, shoulder, and scalp tension. Includes face massage for complete relaxation.</p>
-                    <div style="margin-top: 15px; color: var(--accent); font-weight: 600;"></div>
-                </article>
-
-                <article class="service-card fade-in">
-                    <div class="service-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/3024/3024041.png" alt="Full body">
-                    </div>
-                    <h3>Full Body Rejuvenation</h3>
-                    <p>Complete head-to-toe therapy combining multiple techniques for total relaxation and muscle recovery.</p>
-                    <div style="margin-top: 15px; color: var(--accent); font-weight: 600;"></div>
-                </article>
-
-                <article class="service-card fade-in">
-                    <div class="service-icon">
-                        <img src="https://cdn-icons-png.flaticon.com/512/855/855643.png" alt="Gun massage">
-                    </div>
-                    <h3>Percussion Gun Therapy</h3>
-                    <p>Advanced percussive therapy to break down deep muscle knots, improve circulation, and accelerate recovery.</p>
-                    <div style="margin-top: 15px; color: var(--accent); font-weight: 600;"></div>
-                </article>
-            </div>
+<!-- Services Section -->
+<section id="services" class="page-section">
+    <div class="wrap">
+        <div class="page-header">
+            <h2>Our Services</h2>
+            <p>Professional massage therapies tailored for men's wellness needs</p>
         </div>
-    </section>
+
+        <div class="services-grid">
+
+            <article class="service-card">
+                <div class="service-image">
+                    <img src="thai.jpeg" alt="Thai Massage">
+                </div>
+                <h3>Thai Massage</h3>
+                <p>Dynamic stretching and pressure point therapy to restore mobility and relieve muscle tension. Perfect for athletes and active individuals.</p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-image">
+                    <img src="aroma .jpeg" alt="Aroma Massage">
+                </div>
+                <h3>Aroma Massage</h3>
+                <p>Calming essential oils combined with gentle strokes for deep relaxation and skin nourishment. Choose from lavender, eucalyptus, or sandalwood.</p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-image">
+                    <img src="stone.jpeg" alt="Hot Stone Therapy">
+                </div>
+                <h3>Hot Stone Therapy</h3>
+                <p>Heated basalt stones deeply relax muscles, improve circulation, and promote faster recovery. Ideal for chronic pain and stress relief.</p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-image">
+                    <img src="Steam.jpeg" alt="Steam Bath">
+                </div>
+                <h3>Steam Bath</h3>
+                <p>Detoxifying steam session to open pores, relax muscles, and prepare your body for deep tissue work. Includes aromatherapy options.</p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-image">
+                    <img src="Foot.jpeg" alt="Foot Reflexology">
+                </div>
+                <h3>Foot Reflexology</h3>
+                <p>Targeted pressure point work on feet to relieve stress, improve sleep, and balance energy throughout the body.</p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-image">
+                    <img src="head.jpeg" alt="Head Massage">
+                </div>
+                <h3>Head & Shoulder Relief</h3>
+                <p>Specialized treatment for desk workers targeting neck, shoulder, and scalp tension. Includes face massage for complete relaxation.</p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-image">
+                    <img src="full.jpeg" alt="Full Body Massage">
+                </div>
+                <h3>Full Body Rejuvenation</h3>
+                <p>Complete head-to-toe therapy combining multiple techniques for total relaxation and muscle recovery.</p>
+            </article>
+
+            <article class="service-card">
+                <div class="service-image">
+                    <img src="gun.jpeg" alt="Gun Massage">
+                </div>
+                <h3>Percussion Gun Therapy</h3>
+                <p>Advanced percussive therapy to break down deep muscle knots, improve circulation, and accelerate recovery.</p>
+            </article>
+
+        </div>
+    </div>
+</section>
 
     <!-- Combos Section -->
     <section id="combos" class="page-section">
@@ -1098,7 +1169,7 @@
             </div>
 
             <div style="background: rgba(255,255,255,0.05); padding: 25px; border-radius: 16px; margin-top: 40px;">
-                <h3 style="margin-top: 0;">Membership Benefits</h3>
+                <h3 style="margin-top: 0;">Massage Benefits</h3>
                 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 20px;">
                     <div>
                         <div style="color: var(--accent); font-weight: 600; margin-bottom: 8px;">✓ Thai Massage</div>
@@ -1196,14 +1267,11 @@
                             <label for="service">Select Service *</label>
                             <select id="service" name="service" required>
                                 <option value="">Choose a service or package</option>
-                                <option value="Premium 4-Hands">Premium 4-Hands (₹2,499)</option>
                                 <option value="Relax Basic">Relax Basic (₹999)</option>
                                 <option value="Deep Relief">Deep Relief (₹1,199)</option>
                                 <option value="Signature">Signature (₹1,499)</option>
                                 <option value="Couple/Friends">Couple/Friends (₹1,999)</option>
-                                <option value="Thai Massage">Thai Massage Only</option>
-                                <option value="Aroma Massage">Aroma Massage Only</option>
-                                <option value="Hot Stone">Hot Stone Therapy Only</option>
+                                <option value="Premium 4-Hands">Premium 4-Hands (₹2,499)</option>
                             </select>
                         </div>
 
@@ -1219,7 +1287,6 @@
 
                         <div style="display: flex; gap: 15px; margin-top: 30px;">
                             <button type="submit" class="btn btn-primary" style="flex: 1;">Submit Booking</button>
-                            <button type="button" class="btn btn-ghost" id="whatsappBtn" style="flex: 1;">WhatsApp Quick Book</button>
                         </div>
                     </form>
                 </div>
@@ -1291,17 +1358,6 @@
         <p style="margin-top: 10px; font-size: 13px;">For gentlemen aged 18+ only. Professional massage therapy center.</p>
     </footer>
 
-    <!-- Modal for booking confirmation -->
-    <div id="modal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.8); z-index: 2000; justify-content: center; align-items: center; opacity: 0; transition: opacity 0.3s;">
-        <div style="background: linear-gradient(135deg, var(--bg1), var(--bg2)); padding: 40px; border-radius: 20px; max-width: 500px; width: 90%; text-align: center;">
-            <h3 id="modalTitle" style="margin-top: 0;"></h3>
-            <p id="modalMessage" style="margin: 20px 0;"></p>
-            <div style="display: flex; gap: 15px; justify-content: center;">
-                <button id="modalOkBtn" class="btn btn-primary">OK</button>
-                <button id="modalWhatsAppBtn" class="btn btn-ghost">Confirm via WhatsApp</button>
-            </div>
-        </div>
-    </div>
 
     <script>
         /*********** VARIABLE DECLARATIONS ***********/
@@ -1377,6 +1433,53 @@
         });
 
         window.addEventListener('scroll', updateActiveNav);
+
+//==============================================================================
+
+    document.getElementById("bookingForm").addEventListener("submit", function (e) {
+        e.preventDefault(); // form reload aagadhu
+
+        const name = document.getElementById("name").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const service = document.getElementById("service").value;
+        const date = document.getElementById("date").value;
+        const message = document.getElementById("message").value.trim();
+
+        // Validation
+        if (!name || !phone || !service || !date) {
+            alert("Please fill all required fields");
+            return;
+        }
+
+        const adminWhatsApp = "919876543210"; // 🔴 unga WhatsApp number (country code with)
+
+        const now = new Date().toLocaleString("en-IN", {
+            dateStyle: "medium",
+            timeStyle: "short"
+        });
+
+        const whatsappMessage =
+    `📅 *New Appointment Booking*
+
+    👤 Name: ${name}
+    📞 Phone: ${phone}
+    💆 Service: ${service}
+    🕒 Date & Time: ${date}
+
+    📝 Special Request:
+    ${message || "None"}
+
+    ⏰ Sent on: ${now}`;
+
+        const whatsappURL =
+            `https://wa.me/${adminWhatsApp}?text=${encodeURIComponent(whatsappMessage)}`;
+
+        window.open(whatsappURL, "_blank");
+
+        // Form clear after send
+        this.reset();
+    });
+//==============================================================================
 
         /*********** MOBILE MENU ***********/
         if (mobileNavToggle) {
@@ -1509,10 +1612,6 @@
                     openModal('Invalid Date', 'Please select a future date and time.');
                     return;
                 }
-
-                openModal('Booking Request Received!', `Thank you ${name}! We have received your booking request for ${service} on ${new Date(date).toLocaleString()}. We will contact you at ${phone} shortly to confirm your appointment.`);
-                bookingForm.reset();
-                setDefaultDateTime(); // Reset to default date
             });
         }
 
@@ -1529,8 +1628,8 @@
         const getDirectionsBtn = document.getElementById('getDirections');
         if (getDirectionsBtn) {
             getDirectionsBtn.addEventListener('click', () => {
-                const address = '123 Wellness Street, Example City, India';
-                window.open(`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`, '_blank');
+                const address = '';
+                window.open(`https://www.google.com/maps/place/Anma+Massage+center/@9.9120035,78.0931514,17z/data=!3m1!4b1!4m6!3m5!1s0x3b00cff279c846b3:0x6948b73ed398bf79!8m2!3d9.9119982!4d78.0977648!16s%2Fg%2F11x85qflj8?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D`, '_blank');
             });
         }
 
@@ -1591,10 +1690,4 @@
         });
     </script>
 </body>
-
-</html> const isActive = document.body.classList.contains('mobile-nav-active'); spans.forEach((span, index) => { if (isActive) { // Return to hamburger span.style.transform = 'none'; span.style.opacity = '1'; } else { // Transform to X if (index === 0) { span.style.transform
-= 'rotate(45deg) translate(5px, 5px)'; } else if (index === 1) { span.style.opacity = '0'; } else if (index === 2) { span.style.transform = 'rotate(-45deg) translate(7px, -6px)'; } } }); }); } });
-</script>
-</body>
-
-</html>
+</html> 
