@@ -7,6 +7,9 @@
     <title>Anma Massage Center</title>
     <meta name="description" content="Anma Massage Center — Gents only professional massage services: Thai, Aroma, Hot Stone, Steam Bath, Reflexology, Gun Massage and curated combo packages. Book online or message on WhatsApp." />
     <meta name="theme-color" content="#6f2a6f" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+      <link rel="icon" type="jpeg" href="fav.png">
     <style>
         /* Root Variables */
         /* Root Variables */
@@ -864,6 +867,94 @@
         font-size: 28px;
     }
 }
+footer {
+    padding: 30px 20px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+footer p + p {
+    margin-top: 6px;
+    font-size: 13px;
+}
+
+/* THIRD LINE */
+.developer {
+    margin-top: 8px;
+    font-size: 13px;
+    color: #ffffff;
+    white-space: nowrap; /* keeps it one line on desktop */
+}
+
+.developer span {
+    font-weight: 500;
+}
+
+.developer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 6px;
+}
+
+.developer a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .developer {
+        white-space: normal; /* allow wrap on small screens */
+        line-height: 1.6;
+    }
+}
+/* Buttons Wrapper */
+.contact-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+/* Common Button Style */
+.contact-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 10px;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Call Button */
+.call-btn {
+    background: #007bff;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    background: #25D366;
+}
+
+.contact-btn i {
+    font-size: 18px;
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.4);
+}
 
     </style>
 </head>
@@ -875,7 +966,7 @@
         <a href="#services">Services</a>
         <a href="#combos">Combos</a>
         <a href="#membership">Membership</a>
-        <a href="#gallery">Gallery</a>
+         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -907,13 +998,37 @@
                     </article>
 
                     <aside class="hero-card">
-                        <div style="display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-bottom: 20px;">
-                            <div>
-                                <div class="pill" style="background: var(--accent); color: #2b2b2b; padding: 10px 20px; font-weight: 800; border-radius: 10px; font-size: 1.1rem; letter-spacing: 0.5px; text-transform: uppercase;">Gents Only</div>
-                                <h3 style="margin-top: 20px; margin-bottom: 10px;">Quick Contact</h3>
-                                <a href="tel:+919876543210" style="font-weight: 800; font-size: 20px; color: var(--accent);">+91 98765 43210</a>
-                                <div style="margin-top: 8px; color: rgba(255,255,255,0.8);">Open Daily 10:00 AM - 11:30 PM</div>
-                            </div>
+                        <div class="pill">Gents Only</div>
+
+                        <h3 style="margin-top:20px; margin-bottom:10px;">
+                            Quick Contact
+                        </h3>
+                        <h3 style="margin-top:20px; margin-bottom:10px;">
+                            Branch
+                        </h3>
+                        <div class="pill">Tirunelveli, Salem, Madurai</div>
+                        <!-- Buttons -->
+                        <div class="contact-buttons">
+
+                            <!-- Phone Call -->
+                            <a href="tel:+917373737536" class="contact-btn call-btn">
+                                <i class="fas fa-phone"></i>
+                                Call
+                            </a>
+
+                            <!-- WhatsApp -->
+                            <a href="https://wa.me/917373737536?text=Hello%20I%20would%20like%20to%20book%20an%20appointment"
+                              target="_blank"
+                              class="contact-btn whatsapp-btn">
+                                <i class="fab fa-whatsapp"></i>
+                                WhatsApp
+                            </a>
+
+                        </div>
+
+                        <div class="time">
+                            8 Am to 9 Pm
+                            All day's working
                         </div>
                     </aside>
                 </div>
@@ -1197,7 +1312,6 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
     <section id="gallery" class="page-section">
         <div class="wrap">
             <div class="page-header">
@@ -1207,35 +1321,33 @@
 
             <div class="gallery-grid">
                 <div class="gallery-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Treatment Room">
+                    <img src="1.jpeg" alt="Treatment Room">
                 </div>
 
                 <div class="gallery-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Therapist at Work">
+                    <img src="2.jpeg" alt="Therapist at Work">
                 </div>
 
                 <div class="gallery-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1560869713-7d0a8b1139c6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Hot Stone Therapy">
+                    <img src="3.jpeg" alt="Hot Stone Therapy">
                 </div>
 
                 <div class="gallery-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1560790671-b76ca4de55ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Steam Bath">
+                    <img src="5.jpeg" alt="Foot Reflexology">
                 </div>
 
                 <div class="gallery-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Foot Reflexology">
+                    <img src="6.jpeg" alt="Reception Area">
                 </div>
 
                 <div class="gallery-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Reception Area">
+                    <img src="7.jpeg" alt="Massage Oils">
                 </div>
-
                 <div class="gallery-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Massage Oils">
+                    <img src="8.jpeg" alt="Relaxation Area">
                 </div>
-
                 <div class="gallery-item fade-in">
-                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Relaxation Area">
+                    <img src="9.jfif" alt="Relaxation Area">
                 </div>
             </div>
         </div>
@@ -1295,36 +1407,28 @@
                     <h3 style="margin-top: 0; margin-bottom: 25px;">Contact Information</h3>
 
                     <div class="info-item">
-                        <div class="info-icon">
-                            <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Location">
-                        </div>
                         <div>
                             <h4 style="margin: 0 0 5px;">Our Location</h4>
                             <p style="margin: 0; color: rgba(255,255,255,0.8);">
-                                No. 15, Hotel Gowrikrishna,<br> Salai Muthu Nagar 4th St, Near State Bank Supervisors Colony,<br> Madurai – 625016
+                                No. 15, Hotel Gowrikrishna,<br> Salai Muthu Nagar 4th St, Near State Bank Supervisors Colony,<br> Madurai 625016
                             </p>
 
                         </div>
                     </div>
 
                     <div class="info-item">
-                        <div class="info-icon">
-                            <img src="https://cdn-icons-png.flaticon.com/512/3059/3059986.png" alt="Phone">
-                        </div>
                         <div>
                             <h4 style="margin: 0 0 5px;">Call / WhatsApp</h4>
-                            <p style="margin: 0; color: var(--accent); font-weight: 700; font-size: 18px;">+91 98765 43210</p>
-                            <p style="margin: 5px 0 0; color: rgba(255,255,255,0.8); font-size: 14px;">10:00 AM - 11:30 PM Daily</p>
+                            <a href="tel:+917373737536" style="font-weight: 800; font-size: 20px; color: var(--accent);">+7373737536</a>
+                            <a href="tel:+917845736365" style="font-weight: 800; font-size: 20px; color: var(--accent);">+7845736365</a>
+                            <p style="margin: 5px 0 0; color: rgba(255,255,255,0.8); font-size: 14px;">8:00 AM - 9:00 PM Daily</p>
                         </div>
                     </div>
 
                     <div class="info-item">
-                        <div class="info-icon">
-                            <img src="https://cdn-icons-png.flaticon.com/512/542/542638.png" alt="Email">
-                        </div>
                         <div>
                             <h4 style="margin: 0 0 5px;">Email Us</h4>
-                            <p style="margin: 0; color: rgba(255,255,255,0.8);">bookings@anmamassage.com</p>
+                            <p style="margin: 0; color: rgba(255,255,255,0.8);">syadrafik@gmail.com</p>
                             <p style="margin: 5px 0 0; color: rgba(255,255,255,0.8); font-size: 14px;">Response within 2 hours</p>
                         </div>
                     </div>
@@ -1332,13 +1436,10 @@
                     <div style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; margin-top: 20px;">
                         <h4 style="margin: 0 0 10px;">Business Hours</h4>
                         <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-                            <span>Monday - Friday</span>
-                            <span style="color: var(--accent);">10:00 AM - 11:30 PM</span>
+                            <span>All day's working</span>
+                            <span style="color: var(--accent);">8:00 AM - 9:00 PM</span>
                         </div>
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
-                            <span>Saturday - Sunday</span>
-                            <span style="color: var(--accent);">9:00 AM - 12:00 AM</span>
-                        </div>
+
                         <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.1);">
                             <p style="margin: 0; font-size: 14px; color: rgba(255,255,255,0.7);">Walk-ins welcome based on availability</p>
                         </div>
@@ -1353,10 +1454,34 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>© <span id="year"></span> Anma Massage Center. All rights reserved.</p>
-        <p style="margin-top: 10px; font-size: 13px;">For gentlemen aged 18+ only. Professional massage therapy center.</p>
-    </footer>
+<footer class="site-footer">
+    <p class="copyright">
+        © <span id="year"></span> Anma Massage Center. All rights reserved.
+    </p>
+
+    <p class="footer-note">
+        For gentlemen aged 18+ only. Professional massage therapy center.
+    </p>
+
+    <div class="developer">
+        <span class="developer-name">
+            <i class="fa-solid fa-code"></i>
+            Developed by Mohammed Irfan K
+        </span>
+
+        <a href="https://www.instagram.com/irfanvortexx/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram"></i>
+            Instagram
+        </a>
+        <span class="separator">|</span>
+
+        <a href="mailto:mohammedirfan932@gmail.com" target="_blank" rel="noopener">
+            <i class="fa-solid fa-envelope"></i>
+            Gmail
+        </a>
+    </div>
+</footer>
+
 
 
     <script>
@@ -1451,7 +1576,7 @@
             return;
         }
 
-        const adminWhatsApp = "919876543210"; // 🔴 unga WhatsApp number (country code with)
+        const adminWhatsApp = "917373737536"; // 🔴 unga WhatsApp number (country code with)
 
         const now = new Date().toLocaleString("en-IN", {
             dateStyle: "medium",
@@ -1585,7 +1710,7 @@
 
         if (modalWhatsAppBtn) {
             modalWhatsAppBtn.addEventListener('click', () => {
-                const phone = '919876543210';
+                const phone = '917373737536';
                 const msg = 'Hello! I just sent a booking request on your website.';
                 window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, '_blank');
                 closeModal();
@@ -1620,7 +1745,7 @@
         if (whatsappBtn) {
             whatsappBtn.addEventListener('click', () => {
                 const message = 'Hello, I want to book an appointment!';
-                window.open(`https://wa.me/919876543210?text=${encodeURIComponent(message)}`, '_blank');
+                window.open(`https://wa.me/917373737536?text=${encodeURIComponent(message)}`, '_blank');
             });
         }
 
